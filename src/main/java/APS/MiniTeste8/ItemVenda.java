@@ -21,5 +21,10 @@ public class ItemVenda {
 		this.produto = produto;
 	}
 	
+	@Override
+	public String toString() {
+		return "Produto:" + this.produto.toString()+",Quantidade: "+this.quantidade;
+	}
+	
 	
 }

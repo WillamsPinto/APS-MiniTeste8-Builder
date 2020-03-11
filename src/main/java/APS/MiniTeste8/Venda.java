@@ -11,15 +11,12 @@ public class Venda {
 	private Frete frete;
 	private Funcionario funcionario;
 	
-	public Venda(String data) {
+	public Venda() {
 		this.itens = new ArrayList<ItemVenda>();
-		this.data = data;
 	}
 	
-	public Venda() {}
-	
 	public void addItem(ItemVenda item) {
-		itens.add(item);
+		this.itens.add(item);
 	}
 	
 	public List<ItemVenda> getItens(){
@@ -49,6 +46,14 @@ public class Venda {
 	}
 	public void setFuncionario(Funcionario funcionario) {
 		this.funcionario = funcionario;
+	}
+
+	@Override
+	public String toString() {
+		return "Data: "+this.data
+				+ "\nFrete: "+frete.getValor()
+				+ "\nItens: " +this.itens.toString()
+				+ "\nFuncionario: "+this.funcionario.getNome();
 	}
 	
 	

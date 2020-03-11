@@ -33,7 +33,7 @@ public class VendaBuilder {
 	}
 	
 	public VendaBuilder Item(int quantidade, Produto produto) {
-		venda.addItem(new ItemVenda(quantidade,produto));
+		venda.addItem(new ItemVenda(quantidade, produto));
 		return this;
 	}
 	
