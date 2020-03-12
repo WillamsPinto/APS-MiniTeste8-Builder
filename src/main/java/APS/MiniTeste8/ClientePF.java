@@ -1,6 +1,7 @@
 package APS.MiniTeste8;
 
 public class ClientePF extends Cliente{
+	
 	private String nome;
 	private String cpf;
 	
@@ -27,8 +28,8 @@ public class ClientePF extends Cliente{
 
 	@Override
 	public String toString() {
-		return "\nCliente: "+this.nome+"\nCPF: "+this.cpf;
+		return "\nCliente: " + this.nome+ " | CPF: " + this.cpf;
 	}
-	
+
 	
 }

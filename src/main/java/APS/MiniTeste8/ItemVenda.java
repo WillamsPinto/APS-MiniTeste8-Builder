@@ -23,7 +23,7 @@ public class ItemVenda {
 	
 	@Override
 	public String toString() {
-		return "Produto:" + this.produto.toString()+",Quantidade: "+this.quantidade;
+		return "\nItem: "+this.produto+" | Quantidade: "+this.quantidade;
 	}
 	
 	
