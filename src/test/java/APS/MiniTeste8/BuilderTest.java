@@ -79,7 +79,7 @@ public class BuilderTest extends TestCase {
 		
 		Venda venda = new VendaBuilder()
 				.Data("10/10/2020")
-				.ClientePF("José", "000.000.000-00")
+				.ClientePJ("Monstros SA", "xx.xxx.xxx/xxxx-xx")
 				.Frete(150.55)
 				.Item(2000, caneta)
 				.Item(2500, lapis)
@@ -90,7 +90,7 @@ public class BuilderTest extends TestCase {
 				.Build();
 		
 		assertEquals("Data: 10/10/2020"
-				+ "\nCliente: José | CPF: 000.000.000-00["
+				+ "\nCliente: Monstros SA | CNPJ: xx.xxx.xxx/xxxx-xx["
 				+ "\nItem: Caneta | Preço: R$: 1.0 | Quantidade: 2000, "
 				+ "\nItem: Lapís | Preço: R$: 1.5 | Quantidade: 2500, "
 				+ "\nItem: Tesoura | Preço: R$: 2.5 | Quantidade: 2000, "
